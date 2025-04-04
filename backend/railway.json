@@ -11,6 +11,9 @@
     "restartPolicy": {
       "type": "on-failure",
       "maxRetries": 10
+    },
+    "env": {
+      "SPRING_PROFILES_ACTIVE": "prod"
     }
   }
 } 
