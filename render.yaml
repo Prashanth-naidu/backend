@@ -2,6 +2,7 @@ services:
   - type: web
     name: cms-backend
     env: java
+    rootDir: backend
     buildCommand: mvn clean package -DskipTests
     startCommand: java -jar target/app.jar
     envVars:
