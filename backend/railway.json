@@ -6,12 +6,9 @@
   },
   "deploy": {
     "startCommand": "java -jar target/app.jar",
-    "healthcheckPath": "/api/headings",
-    "healthcheckTimeout": 100,
-    "restartPolicy": "on_failure",
-    "numReplicas": 1,
-    "env": {
-      "SPRING_PROFILES_ACTIVE": "prod"
+    "healthcheck": {
+      "path": "/api/headings",
+      "timeout": 100
     }
   }
 } 
