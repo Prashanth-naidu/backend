@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cms-backend
+    env: java
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/app.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: PORT
+        value: 8080
+    healthCheckPath: /api/headings
+    autoDeploy: true 
