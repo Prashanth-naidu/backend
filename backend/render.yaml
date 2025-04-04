@@ -1,1 +1,12 @@
- 
+services:
+  - type: web
+    name: cms-backend
+    env: docker
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: PORT
+        value: 8080
+    healthCheckPath: /api/headings
+    autoDeploy: true 
