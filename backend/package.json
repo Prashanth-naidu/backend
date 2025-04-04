@@ -1,0 +1,14 @@
+{
+  "name": "cms-backend",
+  "version": "1.0.0",
+  "description": "Spring Boot backend for CMS",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build": "echo 'This is a Java application, using Maven to build' && mvn clean package -DskipTests",
+    "start": "echo 'Starting Java application' && java -jar target/company-abc-backend-0.0.1-SNAPSHOT.jar"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+} 

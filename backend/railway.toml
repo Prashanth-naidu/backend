@@ -10,4 +10,5 @@ restartPolicyType = "on-failure"
 restartPolicyMaxRetries = 10
 
 [deploy.env]
-JAVA_TOOL_OPTIONS = "-Xmx512m -Xms256m" 
+JAVA_TOOL_OPTIONS = "-Xmx512m -Xms256m"
+SPRING_PROFILES_ACTIVE = "prod" 
